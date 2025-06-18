@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Researcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs6YKY8Kf8LQ+w9cUPU8TL+dgAtcIQg4oWy+5UuY0B5c1t8IMu/UgFkC1E+ZK+N+AHy+Az6Y7PVcA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f2f4f8;
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(to right, #2b2e4a, #e84545);
+      color: white;
+      padding: 4rem 1rem 3rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+    nav {
+      background: white;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      color: #e84545;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #2b2e4a;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #f8f8f8;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    a {
+      color: #e84545;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .social-links a {
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #e84545;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Researcher in [Your Field]</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Brief biography and academic background.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research Interests</h2>
+    <p>Your main areas of research, interests, and current work.</p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li><strong>Title of Paper</strong>, Journal Name, Year.</li>
+      <li><strong>Another Title</strong>, Conference Name, Year.</li>
+    </ul>
+  </section>
+
+  <section id="cv">
+    <h2>CV</h2>
+    <p><a href="cv.pdf" target="_blank">Download my CV (PDF)</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=yourID" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+      <a href="https://orcid.org/your-orcid-id" target="_blank"><i class="fab fa-orcid"></i> ORCID</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
