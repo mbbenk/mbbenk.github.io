@@ -269,6 +269,45 @@ font-weight: 600;
 color: #1a1a1a;
 }
 
+.news-image {
+  width: 500px; /* Set desired width */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.news-item img.news-image {
+  display: block;       /* makes the image a block */
+  margin: 1rem auto;    /* centers the image horizontally */
+  max-width: 600px;     /* adjust size as needed */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.image-row {
+  display: flex;           /* side-by-side layout */
+  justify-content: center; /* center the images */
+  gap: 1rem;               /* space between images */
+  flex-wrap: wrap;         /* wrap on smaller screens */
+}
+
+.wide-image {
+  width: 70%;     /* takes 60% of row */
+  max-width: 500px; /* optional max size */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.narrow-image {
+  width: 30%;     /* takes 35% of row */
+  max-width: 200px; /* optional max size */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
 @media (max-width: 768px) {
 .profile-header {
 flex-direction: column;
@@ -338,7 +377,13 @@ I am always open to discussions, collaborations, and opportunities to expand my 
 <span class="news-date">[July 2025]</span> Join me at the <strong>AI for Good 2025 Global Summit</strong> in Geneva! Excited to be participating as an invited expert at the workshop <a href="https://aiforgood.itu.int/event/ai-for-human-rights-smarter-faster-fairer-monitoring/" target="_blank">AI for Human Rights: Smarter, Faster, Fairer Monitoring</a>, where we will have critical discussions on how AI can help advance global human rights efforts.
 </div>
 <div class="news-item">
-<span class="news-date">[March 2025]</span> Happy to share that I have <strong>successfully defended my PhD dissertation titled "Human-Centered Strategies for Designing and Evaluating Transparency in AI-Assisted Decision Making" at ETH Zurich</strong>! A heartfelt thank you to my PhD advisor <strong>Florian von Wangenheim</strong>, co-examiner <strong>Tim Miller</strong>, lab mates, collaborators, friends, and family for their incredible support throughout this journey.
+<span class="news-date">[March 2025]</span> Very happy to share that I have <strong>successfully defended my PhD dissertation titled "Human-Centered Strategies for Designing and Evaluating Transparency in AI-Assisted Decision Making" at ETH Zurich</strong>! A heartfelt thank you to my PhD advisor <strong>Florian von Wangenheim</strong>, co-examiner <strong>Tim Miller</strong>, lab mates, collaborators, friends, and family for their incredible support throughout this journey.
+
+  <!-- Add image here -->
+<div class="image-row">
+  <img src="PhD_celebration.jpg" alt="Wider Image" class="wide-image">
+  <img src="PhD_celebration_2.jpg" alt="Narrower Image" class="narrow-image">
+</div>
 </div>
 </section>
 
