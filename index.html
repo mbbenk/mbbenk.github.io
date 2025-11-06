@@ -1,326 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Michaela B. Benk</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@200;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Michaela B. Benk</title>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" crossorigin="anonymous" />
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f2f4f8;
-      color: #333;
-      line-height: 1.7;
-    }
-    header {
-      background: linear-gradient(to right, #2b2e4a, #e84545);
-      color: black;
-      padding: 4rem 1rem 3rem;
-      text-align: center;
-    }
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
 
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-      color: black;     
-    letter-spacing: 0.3px;
-    }
+body {
+  font-family: "Crimson Text", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  font-size: 18px;
+}
 
-    header h1,
-    .profile-text h1 {
-      font-family: 'Manrope',sans-serif;
-    }
+p, li {
+  font-family: "Crimson Text", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: rgba(44, 44, 44, 0.85);
+  line-height: 1.75;
+  letter-spacing: 0.1px;
+  margin-bottom: 1.2rem;
+}
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  color: #853d55; /* matching the color you use in your CV */
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
 
-    header h1,
-    .profile-text h1 {
-      font-family: 'Manrope', sans-serif;
-      font-weight: 100; /* ExtraLight */
-      font-size: 3.5rem; /* Signature feel */
-      color: #960244;
-      letter-spacing: 0.5px; /* Optional: subtle refinement */
-    }
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+header {
+background: #ffffff;
+color: #2c2c2c;
+padding: 3rem 1rem 2rem;
+text-align: center;
+border-bottom: 1px solid #d0d0d0;
+}
+
+header h1 {
+font-family: 'Crimson Text', serif;
+font-size: 2.8rem;
+margin-bottom: 0.5rem;
+font-weight: 600;
+color: #853d55
+}
+
+header p {
+font-family: 'Crimson Text', sans-serif;
+font-weight: 400;
+font-size: 1.1rem;
+color: #555;
+margin-top: 0rem;
+}
+
+nav {
+background: #f8f8f8;
+padding: 0.75rem 1rem;
+text-align: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+border-bottom: 1px solid #e0e0e0;
+}
+
+nav a {
+margin: 0 1.5rem;
+text-decoration: none;
+color: #333;
+font-weight: 400;
+font-size: 0.95rem;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+transition: all 0.3s ease;
+}
+
+nav a:hover {
+color: #87546A;
+}
+
+section {
+max-width: 850px;
+margin: 3rem auto;
+background: white;
+padding: 2rem 3rem;
+}
 
 
-   header p {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    font-size: 1.0rem;
-    color: #555;
-    margin-top: 0.5rem;
-  }
-    nav {
-      background: white;
-      padding: 1rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    nav a:hover {
-      color: #e84545;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2.5rem;
-      border-radius: 16px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.07);
-    }
-    h2 {
-      font-size: 1.8rem;
-      color: #2b2e4a;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 0.5rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #f8f8f8;
-      color: #666;
-      font-size: 0.9rem;
-      margin-top: 3rem;
-    }
-    a {
-      color: #e84545;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .social-links a {
-      font-weight: 500;
-      font-size: 1.1rem;
-      color: #444;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: color 0.3s;
-    }
-    .social-links a:hover {
-      color: #e84545;
-    }
+h2 {
+font-family: 'Crimson Text', serif;
+font-size: 1.9rem;
+color: #853d55;
+margin-bottom: 1.5rem;
+font-weight: 600;
+border-bottom: 1px solid #87546A;
+padding-bottom: 0.5rem;
+}
 
-    .profile-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 3rem 1rem 2rem;
-  background: #f2f4f8;
+h3 {
+font-family: 'Crimson Text', serif;
+font-size: 1.3rem;
+color: #2c2c2c;
+margin-top: 1.5rem;
+margin-bottom: 0.5rem;
+font-weight: 600;
+}
+
+p {
+margin-bottom: 1rem;
+text-align: justify;
+}
+
+ul {
+padding-left: 0;
+list-style: none;
+}
+
+ul li {
+margin-bottom: 1.5rem;
+padding-left: 0;
+text-align: justify;
+}
+
+ul li strong {
+font-weight: 600;
+color: #1a1a1a;
+}
+
+footer {
+text-align: center;
+padding: 2rem 1rem;
+background: #f8f8f8;
+color: #666;
+font-size: 0.9rem;
+margin-top: 4rem;
+border-top: 1px solid #e0e0e0;
+}
+
+a {
+color: #87546A;
+text-decoration: none;
+border-bottom: 1px solid transparent;
+transition: border-bottom 0.2s;
+}
+
+a:hover {
+border-bottom: 1px solid #87546A;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+margin-top: 1rem;
+flex-wrap: wrap;
+}
+
+.social-links a {
+font-weight: 400;
+font-size: 1.5rem;
+color: #555;
+border: none;
+transition: color 0.3s;
+}
+
+.social-links a:hover {
+color: #87546A;
+}
+
+.profile-header {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2.5rem;
+padding: 3rem 1rem 2rem;
+background: #ffffff;
 }
 
 .profile-pic {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+width: 180px;
+height: 180px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid #e0e0e0;
+flex-shrink: 0;
+}
+
+.profile-text {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
 }
 
 .profile-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+font-family: 'Crimson Text', serif;
+font-size: 2.8rem;
+margin-bottom: 0.2rem;
+font-weight: 600;
+color: #87546A;
+letter-spacing: 0.5px;
 }
 
 .profile-text p {
-  font-size: 1.2rem;
-  color: #555;
+font-size: 1.1rem;
+color: #555;
+text-align: center;
 }
 
-  </style>
+.publication-item {
+margin-bottom: 1.8rem;
+}
+
+.pub-title {
+font-weight: 600;
+color: #1a1a1a;
+font-size: 1.05rem;
+}
+
+.pub-authors {
+color: #555;
+font-style: italic;
+margin-top: 0.3rem;
+}
+
+.pub-venue {
+color: #666;
+margin-top: 0.3rem;
+}
+
+.pub-description {
+color: #2c2c2c;
+margin-top: 0.5rem;
+font-size: 0.95rem;
+}
+
+.news-item {
+margin-bottom: 1.5rem;
+border-left: 1px solid #87546A;
+padding-left: 1rem;
+}
+
+.news-date {
+font-weight: 600;
+color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+.profile-header {
+flex-direction: column;
+}
+section {
+padding: 1.5rem;
+}
+}
+</style>
 </head>
 <body>
 <header class="profile-header">
-  <img src="Me.jpg" alt="Your Name" class="profile-pic">
-  <div class="profile-text">
-    <h1>Michaela B. Benk</h1>
-    <p>Dr. sc. ETH Zurich | Researcher in Human-Centered AI</p>
-    
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/mbbenk" target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://scholar.google.com/citations?user=hFdaRTMAAAAJ&hl=e" target="_blank">
-        <i class="fas fa-graduation-cap"></i>
-      </a>
-      <a href="https://orcid.org/0000-0002-8171-320X" target="_blank">
-        <i class="fab fa-orcid"></i>
-      </a>
-      <a href="mbbenk@gmail.com" target="_blank">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </div>
-  </div>
+<img src="Me.jpg" alt="Michaela B. Benk" class="profile-pic">
+<div class="profile-text">
+<h1>Michaela B. Benk</h1>
+<p>Dr. sc. ETH Zurich<br>Researcher in Human-Centered AI</p>
+<div class="social-links">
+<a href="https://www.linkedin.com/in/mbbenk" target="_blank" title="LinkedIn">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href="https://scholar.google.com/citations?user=hFdaRTMAAAAJ&hl=e" target="_blank" title="Google Scholar">
+<i class="fas fa-graduation-cap"></i>
+</a>
+<a href="https://orcid.org/0000-0002-8171-320X" target="_blank" title="ORCID">
+<i class="fab fa-orcid"></i>
+</a>
+<a href="mailto:mbbenk@gmail.com" title="Email">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+</div>
 </header>
 
-  </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#news">News</a>
-    <a href="#publications">Publications</a>
-    <a href="#cv">CV</a>
-  </nav>
+<nav>
+<a href="#about">About</a>
+<a href="#news">News</a>
+<a href="#publications">Publications</a>
+<a href="#talks">Talks</a>
+<a href="#cv">CV</a>
+</nav>
 
-  <section id="about">
-    <p>
-  I am an interdisciplinary researcher with a background in <strong>Computational Linguistics</strong> and <strong>Multilingual Text Analysis</strong>, and over <strong>eight years of experience in Human-Computer Interaction and Human-Centered AI</strong>. I study how people make decisions, how AI systems influence those decisions, and what that means for society. I strongly believe that for AI systems to become valuable tools for all, humans (and not just the <a href="https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/weirdest-people-in-the-world/BF84F7517D56AFF7B7EB58411A554C17" target="_blank">WEIRD</a> ones) and their well-being must be central to their <strong>design</strong>, <strong>evaluation</strong>, and <strong>governance</strong>.
-</p>
-<br/>
+<section id="about">
+<h2>About</h2>
 <p>
-  I have presented my work at <strong>top-tier international AI conferences</strong> and periodically contribute as an <strong>expert and speaker</strong> at international roundtables and AI forums. While my expertise spans a range of topics, I am particularly passionate about the intersection of <strong>AI and the protection and promotion of human rights</strong> - an area where I believe interdisciplinary collaboration is especially needed.
-
-
-
+I am an interdisciplinary researcher with a background in <strong>Computational Linguistics</strong> and <strong>Multilingual Text Analysis</strong>, and over eight years of experience in <strong>Human-Computer Interaction</strong> and <strong>Human-Centered AI</strong>. I study how people make decisions, how AI systems influence those decisions, and what that means for society. I strongly believe that for AI systems to become valuable tools for all, humans (and not just the <a href="https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/weirdest-people-in-the-world/BF84F7517D56AFF7B7EB58411A554C17" target="_blank">WEIRD</a> ones) and their well-being must be central to their <strong>design</strong>, <strong>evaluation</strong>, and <strong>governance</strong>.
 </p>
-<br/>
 <p>
-  I am always open to discussions, collaborations, and opportunities to expand my knowledge and impact in this exciting field. <strong>Feel free to connect</strong> with me to exchange ideas or explore potential collaborations.
+I have presented my work at <strong>top-tier international AI conferences</strong> and periodically contribute as an <strong>expert and speaker</strong> at international roundtables and AI forums. While my expertise spans a range of topics, I am particularly passionate about identifying and addressing the systemic exclusion of <strong>marginalized communities</strong> in the design and evaluation of AI.
 </p>
-  </section>
+<p>
+I am always open to discussions, collaborations, and opportunities to expand my knowledge and impact in this exciting field. Feel free to connect with me to exchange ideas or explore potential collaborations.
+</p>
+</section>
 
+<section id="news">
+<h2>News</h2>
+<div class="news-item">
+<span class="news-date">[September 2025]</span> Very excited to be part of a workshop series on AI and Human Rights at the Latsis Symposium 2025 in Zurich.
+</div>
+<div class="news-item">
+<span class="news-date">[September 2025]</span> Happy to have been invited to speak at the <strong>Zurich Language AI Meetup</strong>! Come and listen to my talk titled "To Trust or Not To Trust: Lessons Learned from the Black Box Problem" where I will explore the question "How can we trust AI models that we don't understand?".
+</div>
+<div class="news-item">
+<span class="news-date">[August 2025]</span> I will be at the summer meeting of <strong>SwissCHI</strong> in Bern! Looking forward to the opportunity to connect with other researchers in Switzerland.
+</div>
+<div class="news-item">
+<span class="news-date">[July 2025]</span> Join me at the <strong>AI for Good 2025 Global Summit</strong> in Geneva! Excited to be participating as an invited expert at the workshop <a href="https://aiforgood.itu.int/event/ai-for-human-rights-smarter-faster-fairer-monitoring/" target="_blank">AI for Human Rights: Smarter, Faster, Fairer Monitoring</a>, where we will have critical discussions on how AI can help advance global human rights efforts.
+</div>
+<div class="news-item">
+<span class="news-date">[March 2025]</span> Happy to share that I have <strong>successfully defended my PhD dissertation titled "Human-Centered Strategies for Designing and Evaluating Transparency in AI-Assisted Decision Making" at ETH Zurich</strong>! A heartfelt thank you to my PhD advisor <strong>Florian von Wangenheim</strong>, co-examiner <strong>Tim Miller</strong>, lab mates, collaborators, friends, and family for their incredible support throughout this journey.
+</div>
+</section>
 
-  <section id="news">
-    <h2>News</h2>
-          <li><strong>[September 2025]</strong> Very excited to be part of a workshop series on AI and Human Rights at the Latsis Symposium 2025 in Zurich. 
-    </li>
-    <br/>
-          <li><strong>[September 2025]</strong> Happy to have been invited to speak at the <strong>Zurich Language AI Meetup</strong>! Come and listen to my talk titled "To Trust or Not To Trust: Lessons Learned from the Black Box Problem" where I will explore the question "How can we trust AI models that we don’t understand?".
-    </li>
-    <br/>
-      <li><strong>[August 2025]</strong> I will be at the summer meeting of <strong>SwissCHI </strong> in Bern! Looking forward to the opportunity to connect with other researchers in Switzerland. 
-    </li>
-    <br/>
-    <li><strong>[July 2025]</strong> Join me at the <strong>AI for Good 2025 Global Summit</strong>  in Geneva! Excited to be participating as an invited expert at the workshop <strong><a href="https://aiforgood.itu.int/event/ai-for-human-rights-smarter-faster-fairer-monitoring/" target="_blank">AI for Human Rights: Smarter, Faster, Fairer Monitoring</a></strong>, where we will have critical discussions on how AI can help advance global human rights efforts. Looking forward to connecting with researchers and practitioners working at the intersection of AI and civil society.
-    </li>
-    <br/>
-    <li><strong>[March 2025]</strong> Happy to share that I have <strong>successfully defended my PhD dissertation titled "Human-Centered Strategies for Designing and Evaluating Transparency in AI-Assisted Decision Making" at ETH Zurich</strong>! A heartfelt thank you to my PhD advisor <strong>Florian von Wangenheim</strong>, co-examiner <strong>Tim Miller</strong>, lab mates, collaborators, friends, and family for their incredible support throughout this journey. I am currently planning the next steps -- stay tuned!       </li>
-  </section>
+<section id="publications">
+<h2>Selected Publications</h2>
 
-  <section id="publications">
-    <h2>Selected Publications</h2>
-    <ul>
-      <li><strong>[2025] Bridging the Knowledge Gap: Understanding User Expectations for Trustworthy LLM Standards</strong>. 
-        Benk, M.,Wettstein, L., Schlicker, N.,Wangenheim, F., Scharowski, N. 
-        AAAI Conference on Artificial Intelligence. 
-    <br/>
-      <strong>TL;DR:</strong> Mixed-methods web-based study (interviews N=12, survey N=379) identifying 68 user-centric trust criteria for LLMs. Reveals priorities for transparent governance, communication, and non-technical complements to techno-focused standards. </li>
-<br/>
-      <li><strong>[2024] Twenty-Four Years of Empirical Research on Trust in AI: A Bibliometric Review of Trends, Overlooked Issues, and Future Directions</strong>. 
-        Benk, M., Kerstan, S., Wangenheim, F., Ferrario, A. 
-        AI & Society
-  <br/>
-  <strong>TL;DR:</strong> Bibliometric and content analysis comprising 1’156 core articles and 36’306 cited articles across multiple disciplines. Shows growth trends, shifting thematic landscape, and continuous gaps in the development of well-defined and contextualized theoretical models to understand trust in AI. <a href="https://link.springer.com/article/10.1007/s00146-024-02059-y">(link)</a>
-</li>
-<br/>
-<li><strong>[2023] Certification Labels for Trustworthy AI: Insights From an Empirical Mixed-Method Study</strong>
-  Scharowski, N., Benk, M., Kühne, S.J., Wettstein, L., Brühlmann, F. 
-  Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency (FAccT).
-  <br/>
-  <strong>TL;DR:</strong> User interviews (N=12) and survey (N=302) show certification labels boost trust and intent to use AI, especially in high‑stakes contexts. <a href="https://dl.acm.org/doi/10.1145/3593013.3593994">(link)</a>
-  </li>
-<br/>
-<li><strong>[2022] "Is It My Turn?" Assessing Teamwork and Taskwork in Collaborative Immersive Analytics</strong>\n
-  Benk, M., Weibel, R., Feuerriegel, S., Ferrario, A. 
-  Proceedings of the 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW).
-  <br/>
-  <strong>TL;DR:</strong> Empirical study of user collaboration in immersive analytics, investigating how teams navigate machine learning tasks in an immersive analytics environment. <a href="https://dl.acm.org/doi/abs/10.1145/3555580">(link)</a>
-</li>
-<br/>
-<li><strong>[2022] Investigating Employees’ Concerns and Wishes Regarding Digital Stress Management Interventions With Value Sensitive Design: Mixed Methods Study</strong>, Kerr, J., Naegelin, M., Benk, M., Wangenheim, F., Meins, E., Viganò, E., Ferrario, A. Journal of Medical Internet Research.
-  <br/>
-  <strong>TL;DR:</strong> Mixed-method exploration using Value-Sensitive Design to uncover employee preferences and privacy concerns around digital stress management tools. <a href="https://www.jmir.org/2023/1/e44131/">(link)</a>
-</li>
-<br/>
-<li><strong>[2021] The Value of Measuring Trust in AI – A Socio-Technical System Perspective</strong>, Benk, M., Tolmeijer, S., Wangenheim, F., Ferrario, A. CHI 2022 Workshop on Trust and Reliance in AI-Human Teams (TRAIT).
-  <br/>
-  <strong>TL;DR:</strong> Critiques the predominant focus on trust as an evaluation framework for AI research. Proposes a socio-technical systems approach to measuring trust, advocating for holistic assessment beyond individual-level metrics. <a href="https://arxiv.org/abs/2204.13480">(link)</a>
-</li>
-<br/>
-<li><strong>[2021] Creative Uses of AI Systems and their Explanations: A Case Study from Insurance</strong>, Benk, M., Weibel, R., Ferrario, A. CHI 2022 Workshop on Human-Centered Explainable AI (HCXAI).
-  <br/>
-  <strong>TL;DR:</strong> Case study in insurance reveals novel creative workflows enabled by AI systems and explores how explanation mechanisms support users in these settings. <a href="https://arxiv.org/abs/2205.00931">(link)</a>
-</li>
-    </ul>
-  </section>
+<div class="publication-item">
+<div class="pub-title">[2025] Bridging the Knowledge Gap: Understanding User Expectations for Trustworthy LLM Standards</div>
+<div class="pub-authors">Benk, M., Wettstein, L., Schlicker, N., Wangenheim, F., Scharowski, N.</div>
+<div class="pub-venue">AAAI Conference on Artificial Intelligence</div>
+<div class="pub-description">Mixed-methods web-based study (interviews N=12, survey N=379) identifying 68 user-centric trust criteria for LLMs. Reveals priorities for transparent governance, communication, and non-technical complements to techno-focused standards.</div>
+</div>
 
-    <section id="talks">
-    <h2>Talks and Guest Lectures</h2>
-    <ul>
-<li><strong>[July 2025 (upcoming)] AI for Human Rights: Smarter, Faster, Fairer Monitoring</strong> (Invited Expert), AI for Good 2025 Global Summit.
-  <br/>
-  Topic: Leveraging artificial intelligence to improve speed, fairness, and effectiveness in global human rights monitoring.
-</li>
+<div class="publication-item">
+<div class="pub-title">[2024] Twenty-Four Years of Empirical Research on Trust in AI: A Bibliometric Review of Trends, Overlooked Issues, and Future Directions</div>
+<div class="pub-authors">Benk, M., Kerstan, S., Wangenheim, F., Ferrario, A.</div>
+<div class="pub-venue">AI & Society</div>
+<div class="pub-description">Bibliometric and content analysis comprising 1,156 core articles and 36,306 cited articles across multiple disciplines. Shows growth trends, shifting thematic landscape, and continuous gaps in the development of well-defined and contextualized theoretical models to understand trust in AI. <a href="https://link.springer.com/article/10.1007/s00146-024-02059-y">[link]</a></div>
+</div>
 
-<li><strong>[Nov 2024] Transparency Challenges in Human Rights Monitoring</strong> (Invited Speaker), GHRP Annual Conference – Expert Roundtable on Digital Human Rights Tracking Tools and Databases.
-  <br/>
-  Topic: Transparency issues and limitations in the use of digital tools and databases for human rights monitoring.
-</li>
+<div class="publication-item">
+<div class="pub-title">[2023] Certification Labels for Trustworthy AI: Insights From an Empirical Mixed-Method Study</div>
+<div class="pub-authors">Scharowski, N., Benk, M., Kühne, S.J., Wettstein, L., Brühlmann, F.</div>
+<div class="pub-venue">Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency (FAccT)</div>
+<div class="pub-description">User interviews (N=12) and survey (N=302) show certification labels boost trust and intent to use AI, especially in high-stakes contexts. <a href="https://dl.acm.org/doi/10.1145/3593013.3593994">[link]</a></div>
+</div>
 
-<li><strong>[Apr 2024] Guest Lecture on Human-Centered Explainable AI</strong> in course ‘KI und Ethik’, University of Basel.
-  <br/>
-  Topic: Basics on human-centered design principles in explainable AI and their ethical implications.
-</li>
+<div class="publication-item">
+<div class="pub-title">[2022] "Is It My Turn?" Assessing Teamwork and Taskwork in Collaborative Immersive Analytics</div>
+<div class="pub-authors">Benk, M., Weibel, R., Feuerriegel, S., Ferrario, A.</div>
+<div class="pub-venue">Proceedings of the 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)</div>
+<div class="pub-description">Empirical study of user collaboration in immersive analytics, investigating how teams navigate machine learning tasks in an immersive analytics environment. <a href="https://dl.acm.org/doi/abs/10.1145/3555580">[link]</a></div>
+</div>
 
-<li><strong>[Nov 2023] Welcoming Sentient AI</strong> (Panelist), Zurich Independent Art Exhibition.
-  <br/>
-  Topic: Artistic and philosophical perspectives on sentient AI and its societal impacts.
-</li>
+<div class="publication-item">
+<div class="pub-title">[2022] Investigating Employees' Concerns and Wishes Regarding Digital Stress Management Interventions With Value Sensitive Design: Mixed Methods Study</div>
+<div class="pub-authors">Kerr, J., Naegelin, M., Benk, M., Wangenheim, F., Meins, E., Viganò, E., Ferrario, A.</div>
+<div class="pub-venue">Journal of Medical Internet Research</div>
+<div class="pub-description">Mixed-method exploration using Value-Sensitive Design to uncover employee preferences and privacy concerns around digital stress management tools. <a href="https://www.jmir.org/2023/1/e44131/">[link]</a></div>
+</div>
 
-<li><strong>[May 2023] Explainability and Trust: The Importance of the Human Factor</strong> (Panelist), European Data Protection Supervisor IPEN event on Explainable Artificial Intelligence (XAI).
-  <br/>
-  Topic: Discussion on the critical role of human factors in the design and implementation of explainable AI systems.
-</li>
+<div class="publication-item">
+<div class="pub-title">[2021] The Value of Measuring Trust in AI – A Socio-Technical System Perspective</div>
+<div class="pub-authors">Benk, M., Tolmeijer, S., Wangenheim, F., Ferrario, A.</div>
+<div class="pub-venue">CHI 2022 Workshop on Trust and Reliance in AI-Human Teams (TRAIT)</div>
+<div class="pub-description">Critiques the predominant focus on trust as an evaluation framework for AI research. Proposes a socio-technical systems approach to measuring trust, advocating for holistic assessment beyond individual-level metrics. <a href="https://arxiv.org/abs/2204.13480">[link]</a></div>
+</div>
 
-<li><strong>[Sep 2022] Data Science zum Anfassen</strong> (Invited Speaker), Scientifica: Zurich Science Days.
-  <br/>
-  Topic: Making machine learning accessible and engaging for the public through interactive visual analytics. 
+<div class="publication-item">
+<div class="pub-title">[2021] Creative Uses of AI Systems and their Explanations: A Case Study from Insurance</div>
+<div class="pub-authors">Benk, M., Weibel, R., Ferrario, A.</div>
+<div class="pub-venue">CHI 2022 Workshop on Human-Centered Explainable AI (HCXAI)</div>
+<div class="pub-description">Case study in insurance reveals novel creative workflows enabled by AI systems and explores how explanation mechanisms support users in these settings. <a href="https://arxiv.org/abs/2205.00931">[link]</a></div>
+</div>
+</section>
 
-<li><strong>[Apr 2019] Monitoring Hate Speech Online</strong> (Invited Speaker), Annual meeting of the United Nations High Commissioner for Human Rights.
-  <br/>
-  Topic: Approaches and challenges in using machine learning to monitor hate speech online.
-</li>
+<section id="talks">
+<h2>Talks and Guest Lectures</h2>
 
+<div class="publication-item">
+<div class="pub-title">[July 2025] AI for Human Rights: Smarter, Faster, Fairer Monitoring</div>
+<div class="pub-venue">Invited Expert, AI for Good 2025 Global Summit</div>
+<div class="pub-description">Leveraging artificial intelligence to improve speed, fairness, and effectiveness in global human rights monitoring.</div>
+</div>
 
-    </ul>
-  </section>
+<div class="publication-item">
+<div class="pub-title">[November 2024] Transparency Challenges in Human Rights Monitoring</div>
+<div class="pub-venue">Invited Speaker, GHRP Annual Conference – Expert Roundtable on Digital Human Rights Tracking Tools and Databases</div>
+<div class="pub-description">Transparency issues and limitations in the use of digital tools and databases for human rights monitoring.</div>
+</div>
 
-  <section id="cv">
-    <h2>CV</h2>
-    <p><a href="CV.pdf" target="_blank">Download my CV (PDF)</a></p>
-  </section>
+<div class="publication-item">
+<div class="pub-title">[April 2024] Guest Lecture on Human-Centered Explainable AI</div>
+<div class="pub-venue">Course 'KI und Ethik', University of Basel</div>
+<div class="pub-description">Basics on human-centered design principles in explainable AI and their ethical implications.</div>
+</div>
 
-  <footer>
-    <p>&copy; 2025 Michaela Benk. All rights reserved.</p>
-  </footer>
+<div class="publication-item">
+<div class="pub-title">[November 2023] Welcoming Sentient AI</div>
+<div class="pub-venue">Panelist, Zurich Independent Art Exhibition</div>
+<div class="pub-description">Artistic and philosophical perspectives on sentient AI and its societal impacts.</div>
+</div>
+
+<div class="publication-item">
+<div class="pub-title">[May 2023] Explainability and Trust: The Importance of the Human Factor</div>
+<div class="pub-venue">Panelist, European Data Protection Supervisor IPEN event on Explainable Artificial Intelligence (XAI)</div>
+<div class="pub-description">Discussion on the critical role of human factors in the design and implementation of explainable AI systems.</div>
+</div>
+
+<div class="publication-item">
+<div class="pub-title">[September 2022] Data Science zum Anfassen</div>
+<div class="pub-venue">Invited Speaker, Scientifica: Zurich Science Days</div>
+<div class="pub-description">Making machine learning accessible and engaging for the public through interactive visual analytics.</div>
+</div>
+
+<div class="publication-item">
+<div class="pub-title">[April 2019] Monitoring Hate Speech Online</div>
+<div class="pub-venue">Invited Speaker, Annual meeting of the United Nations High Commissioner for Human Rights</div>
+<div class="pub-description">Approaches and challenges in using machine learning to monitor hate speech online.</div>
+</div>
+</section>
+
+<section id="cv">
+<h2>Curriculum Vitae</h2>
+<p><a href="CV.pdf" target="_blank">Download CV (PDF)</a></p>
+</section>
+
+<footer>
+<p>&copy; 2025 Michaela B. Benk. All rights reserved.</p>
+</footer>
 </body>
-</html>
+</html> 
